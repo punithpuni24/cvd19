@@ -1,0 +1,100 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <div class="container">
+	<h1 class="main-header">COVID-19 CORONAVIRUS PANDEMIC</h1>
+	<div class="alert alert-danger" role="alert">
+	  <marquee> 
+		Stay Home, Stay Safe, Save lives 
+	  </marquee>
+	</div>
+	<div class="row justify-content-center">
+		<h2>Report coronavirus cases</h2>
+	</div>
+	  <div class="row justify-content-center">
+		<canvas id="myChart"></canvas>
+	  </div>
+	<div class="row justify-content-center">
+		<div class="col-md-4 col-sm-12">
+		<div class="card">
+		  <h5 class="card-header"> Confirmed Cases </h5>
+		  <div class="card-body">
+			<p class="card-text" id="confirmed"></p>
+		  </div>
+		</div>
+		</div>
+		<div class="col-md-4 col-sm-12">
+		<div class="card">
+		  <h5 class="card-header"> Recovered Cases </h5>
+		  <div class="card-body">
+			<p class="card-text" id="recovered"></p>
+		  </div>
+		</div>
+		</div>
+		<div class="col-md-4 col-sm-12">
+		<div class="card">
+		  <h5 class="card-header"> Death </h5>
+		  <div class="card-body">
+			<p class="card-text" id="deaths"></p>
+		  </div>
+		</div>
+		</div>
+	</div>
+	  <div class="row justify-content-center">
+		<div class="alert alert-success" role="alert">
+		  <h4 class="alert-heading" id="updatedTime"></h4>
+		</div>
+	  </div>
+	  <div class="table-responsive">
+	  <table  class="table">
+        <thead>
+            <tr>
+                <th>Countries</th>
+                <th>Confirmed</th>
+                <th>Deaths</th>
+            </tr>
+        </thead>
+        <tbody class="tableData">
+			
+        </tbody>
+    </table>
+	  
+	  </div>
+	 
+  </div>
+  <footer class="footer">
+      <div class="container">
+        <span class="text-muted">Developed By Punith  </span>  <img src="img/puni.jpg" class="rounded" alt="Cinque Terre">
+      </div>
+  </footer>
+ 
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/plugins.js"></script>
+  
+
+  
+</body>
+
+</html>
